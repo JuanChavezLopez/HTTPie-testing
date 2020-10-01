@@ -1,0 +1,1311 @@
+// todo:           HTTPie: 
+//   web site: http://pangular.webtraining.zone/home
+//////////////////////////////////////
+
+1.1.- 
+C:\> http POST http://projects-api.webtraining.zone/users/login username=esmeralda-rodriguez password=esmeralda
+
+// todo:
+RESPONSE:
+
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Authorization, X-Requested-With, X-Auth-Token, Content-Type
+Access-Control-Allow-Methods: DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, private
+Connection: keep-alive
+Content-Type: application/json
+Date: Thu, 01 Oct 2020 06:58:35 GMT
+Server: nginx/1.10.3 (Ubuntu)
+Transfer-Encoding: chunked
+
+{
+    "api_token": "aM0VgLpNawQfMt9I5qGMX4Bv6Tznr4RnPe3tV3iCB3BnHoAfnJmvlodL2r9S",
+    "created_at": "2020-07-07 05:10:05",
+    "email": "la_esme@webtraining.mx",
+    "id": 395,
+    "name": "Esmeralda Rodriguez RR.",
+    "remember_token": null,
+    "updated_at": "2020-09-02 01:51:42",
+    "username": "esmeralda-rodriguez"
+}
+
+
+
+1.2-
+
+C:\>http GET http://projects-api.webtraining.zone/users Api-Token:aM0VgLpNawQfMt9I5qGMX4Bv6Tznr4RnPe3tV3iCB3BnHoAfnJmvlodL2r9S Content-Type:application/json
+
+Response:
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Authorization, X-Requested-With, X-Auth-Token, Content-Type
+Access-Control-Allow-Methods: DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, private
+Connection: keep-alive
+Content-Type: application/json
+Date: Thu, 01 Oct 2020 07:52:16 GMT
+Server: nginx/1.10.3 (Ubuntu)
+Transfer-Encoding: chunked
+
+[
+    {
+        "api_token": "zOGORFLK8T7MAejwUOLvZ5nBSGlPWFOwYvNOfBXm11ceQtHfuX783lTedoln",
+        "created_at": "2017-05-29 17:22:40",
+        "email": "luis@webtraining.mx",
+        "id": 3,
+        "name": "Luis Mendez",
+        "remember_token": null,
+        "updated_at": "2017-05-29 17:22:40",
+        "username": "luis-mendez"
+    },
+    {
+        "api_token": "DmQYZqZ8OUNaBZvpgMm6uC32AuldX0p09ZQUTBvfC96EcNXUp65e4irfj9Y6",
+        "created_at": "2017-06-10 17:30:14",
+        "email": "sofia123@webtraining.mx",
+        "id": 4,
+        "name": "Sofía Ortiz",
+        "remember_token": null,
+        "updated_at": "2020-06-11 20:41:33",
+        "username": "sofia-ortiz"
+    },
+    {
+        "api_token": "KGactsCsW4POCL2uT8hVmgbo9idRhEkLs7KQdAsgeQZvLug8aEDqmfF8G5NH",
+        "created_at": "2017-06-29 05:27:08",
+        "email": "jsnavarroc@unal.edu.co",
+        "id": 5,
+        "name": "Johan Navarro",
+        "remember_token": null,
+        "updated_at": "2017-06-29 05:27:08",
+        "username": "jsnavarroc"
+    },
+    {
+        "api_token": "lUmVoM6PoGiPa9v52fTBoc2bzuEnh68Ixeju1IsaWIOdU0N4qbaof0qunLxg",
+        "created_at": "2017-07-13 22:57:45",
+        "email": "francisco.hurtado@geoprocess.com.co",
+        "id": 6,
+        "name": "francisco Hurtado",
+        "remember_token": null,
+        "updated_at": "2017-07-13 22:57:45",
+        "username": "francisco-hurtado"
+    },
+    {
+        "api_token": "CVolqfW7DAlVCLZ0k8oMnN2WfqvlnPbvY2t9hp5GlNfCA7d7qDEXY5BS3Qg3",
+        "created_at": "2017-08-02 00:19:18",
+        "email": "miguel@webtraining.mx",
+        "id": 9,
+        "name": "Miguel Estrada",
+        "remember_token": null,
+        "updated_at": "2017-08-02 00:19:18",
+        "username": "miguel"
+    },
+    {
+        "api_token": "v27nBJjN8ct3VBPeK8j2rd2FU2BZcMOAxpCnZgqkkAvFKW1XWhQfuUDDvVdR",
+        "created_at": "2017-08-04 17:56:35",
+        "email": "sofiaz@webtraining.mx",
+        "id": 11,
+        "name": "Sofía Ortizz",
+        "remember_token": null,
+        "updated_at": "2017-08-04 17:56:35",
+        "username": "sofia-ortizz"
+    },
+    {
+        "api_token": "v2OeAaFwX4FPekohkY3KelJT3NjIx5BMASC19EbxgMiCBMYd4czPA0DXH5mc",
+        "created_at": "2017-08-04 23:24:55",
+        "email": "sofiaz@webtsraining.mx",
+        "id": 13,
+        "name": "Sofía Ortsizz",
+        "remember_token": null,
+        "updated_at": "2017-08-04 23:24:55",
+        "username": "sofia-osrtizz"
+    },
+    {
+        "api_token": "HYNTBouca6mUUDXC77oSeN4fqLdYgLaHRSfPm85xeUbKf68GeTZ2gSniGExL",
+        "created_at": "2017-08-19 01:13:13",
+        "email": "karla@gmail.com",
+        "id": 14,
+        "name": "Karla",
+        "remember_token": null,
+        "updated_at": "2017-08-19 01:13:13",
+        "username": "karl"
+    },
+    {
+        "api_token": "xT5evZWzj1phuWtmmL0HH0nX28BgXzZ4IFnHJI0IJS1tcj201szGd1fuIEKB",
+        "created_at": "2017-08-20 23:56:01",
+        "email": "cmtl22@webtraining.mx",
+        "id": 15,
+        "name": "Cesar Tamayo",
+        "remember_token": null,
+        "updated_at": "2017-08-20 23:56:01",
+        "username": "cmtl22"
+    },
+    {
+        "api_token": "295eKutxOkjQ1pMth83vyhun1zfGPrB97DBFnSl1OJyQlPklj2pS4hfkB79b",
+        "created_at": "2017-09-03 03:16:15",
+        "email": "mike_quiroga41@hotmail.com",
+        "id": 16,
+        "name": "Mike Quiroga",
+        "remember_token": null,
+        "updated_at": "2017-09-03 03:16:15",
+        "username": "mike-quiroga"
+    },
+    {
+        "api_token": "XuBbCxRbtcpPHDJPMjuRUpS62lLZeia6rlyPpwgUfOqHh9C3hBSfpEOT9Yry",
+        "created_at": "2017-09-03 03:27:05",
+        "email": "miguel.rosales@base22.com",
+        "id": 19,
+        "name": "Miguel Rosales",
+        "remember_token": null,
+        "updated_at": "2017-09-03 03:27:05",
+        "username": "miguel-rosales"
+    },
+    {
+        "api_token": "k9mVJdd6i9w96sGPZ3r5YV6oYe1LcQeh4EqLETWXshCoblolg0ivsEih5fyk",
+        "created_at": "2017-09-03 03:27:45",
+        "email": "angel@test.com",
+        "id": 20,
+        "name": "Angel Rosales",
+        "remember_token": null,
+        "updated_at": "2017-09-03 03:27:45",
+        "username": "angel-quiroga"
+    },
+    {
+        "api_token": "VX1QnaTNhYEBtUTofRuWX0Ao4T7x2fIyqxk07NkSSRevbDHmeWF14C4Yzv2g",
+        "created_at": "2017-10-12 00:34:26",
+        "email": "esmeralda@webtraining.mx",
+        "id": 24,
+        "name": "Esmeralda Rodr�guez",
+        "remember_token": null,
+        "updated_at": "2020-06-11 20:26:13",
+        "username": "esmeralda-rodriguez-webt"
+    },
+    {
+        "api_token": "5OUMkJMXYAxxrazAqb67vXacZI4RwFjj090ThsYGVapWe4MgF6LZCBGPkP31",
+        "created_at": "2017-10-19 17:53:27",
+        "email": "prueba@prueba.com",
+        "id": 26,
+        "name": "prueba",
+        "remember_token": null,
+        "updated_at": "2017-10-19 17:53:27",
+        "username": "prueba prueba"
+    },
+    {
+        "api_token": "3ywn1Yrg2L6ZcNsFuqAnD5VsAmHMoSf9tU1MEZBXjSsx9imSjzDa5ByWBD9r",
+        "created_at": "2018-05-03 18:11:45",
+        "email": "ds@test.com",
+        "id": 27,
+        "name": "Este Curso Es Genial",
+        "remember_token": null,
+        "updated_at": "2018-05-03 18:11:45",
+        "username": "Gracias"
+    },
+    {
+        "api_token": "cULjnykX99iWXPpXEy6CqpexxMhkB5PwjUkRyjh2D0R25JOlUQiT6O0grSo8",
+        "created_at": "2019-03-27 03:34:25",
+        "email": "storres-test@webtraining.mx",
+        "id": 51,
+        "name": "Susana Torres",
+        "remember_token": null,
+        "updated_at": "2020-09-29 05:04:46",
+        "username": "susana-torres"
+    },
+    {
+        "api_token": "XUicBVjf55BLfYIfAXZbvMgHk6QulCuhvNtuznstDQZ9aOlEHCuGqyhHrZ9w",
+        "created_at": "2019-03-27 04:58:13",
+        "email": "storres@webtraining.mx",
+        "id": 52,
+        "name": "Susana Torres",
+        "remember_token": null,
+        "updated_at": "2019-03-27 04:58:13",
+        "username": "susana-torres"
+    },
+    {
+        "api_token": "YoHaHhEeL3LNPyc6ADnxclBU77nPWkvUGbL1ZNDTObB41vjPW259LIFG0l3E",
+        "created_at": "2019-09-03 18:09:00",
+        "email": "mario@webtraining.mx",
+        "id": 63,
+        "name": "Mario Valdovinos",
+        "remember_token": null,
+        "updated_at": "2019-12-27 16:26:34",
+        "username": "mario-valdovinos"
+    },
+    {
+        "api_token": "TByw8Wt4PSUgMc1WX5Hkvgoud1RTZZZi0pQa98DmpvovdYBh4iX7VaOlm9ou",
+        "created_at": "2019-09-05 19:33:23",
+        "email": "san@webtraining.mx",
+        "id": 68,
+        "name": "Santiago Valdovinos",
+        "remember_token": null,
+        "updated_at": "2019-09-05 23:02:01",
+        "username": "san-valdovinos"
+    },
+    {
+        "api_token": "VuBPdHXi54i7pRZoeAZudynUWQCu9x0V5ujHGWMumaCIlb2YNdNBjUOOKKW5",
+        "created_at": "2019-09-09 19:44:36",
+        "email": "san@lola.mx",
+        "id": 70,
+        "name": "Hola Mundo pop2",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:34:28",
+        "username": "Holaaa-valdovinos123"
+    },
+    {
+        "api_token": "uZBwd7m8owBCTyJUJ36gXfHw2Ju1HHImvgBmCCL8RU6VGH15HYjun470PjDq",
+        "created_at": "2019-09-17 23:28:47",
+        "email": "simon@joja.mx",
+        "id": 76,
+        "name": "lolaclub pop",
+        "remember_token": null,
+        "updated_at": "2019-09-17 23:28:47",
+        "username": "joja-simon"
+    },
+    {
+        "api_token": "ZkaliNqso97Tm5jnqeHbhx5IDS6IT1iPBL5cbB6BRq5v9BAkv2hMi1VDDHji",
+        "created_at": "2019-09-18 19:44:06",
+        "email": "dasd@joja.mx",
+        "id": 81,
+        "name": "asdasda pop",
+        "remember_token": null,
+        "updated_at": "2019-09-18 19:44:06",
+        "username": "dsa-simon"
+    },
+    {
+        "api_token": "4NPNoLEs7eZxsiuveE7TrAE4DUey4dOYmNPT9gOae0vqYIosEDuVAxPvzBfJ",
+        "created_at": "2019-09-18 19:44:51",
+        "email": "1@joja.mx",
+        "id": 83,
+        "name": "1 pop",
+        "remember_token": null,
+        "updated_at": "2019-09-18 19:44:51",
+        "username": "1-simon"
+    },
+    {
+        "api_token": "g9UrznJXovf2PIVj9L1OlJu9eQBHlcAHySsWgsZwnJUJoTERhl7FK3ngZ94O",
+        "created_at": "2019-10-04 16:21:00",
+        "email": "pepito@gmail.com",
+        "id": 88,
+        "name": "pepito",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:21:00",
+        "username": "pepito"
+    },
+    {
+        "api_token": "xOMI3Atld1nl7bEsTPS4nfqRCvENgMvK2N64YBfmoQaz9lsGZUtEsCGhmhLN",
+        "created_at": "2019-10-04 16:21:00",
+        "email": "kavir.ceron@hip.com",
+        "id": 89,
+        "name": "kavcerupdated",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:34:58",
+        "username": "Kavir.ceronupdated"
+    },
+    {
+        "api_token": "2lNPXM2esgFPjZiAzvaBaLKAJkbozu6jRN5ETwieO2bnAp7f8CKBLJ0txTFG",
+        "created_at": "2019-10-04 16:21:06",
+        "email": "josea.luna@softtek.com",
+        "id": 90,
+        "name": "Jose Luna",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:21:06",
+        "username": "lunab"
+    },
+    {
+        "api_token": "Kdurmu1ITAkEAgdsbLPkk5VtcsDY62TRMM9Qv6HKqxVM2NCvzJH6hQxfGXib",
+        "created_at": "2019-10-04 16:21:11",
+        "email": "pablito@softtek.com",
+        "id": 91,
+        "name": "pablito",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:21:11",
+        "username": "pablito"
+    },
+    {
+        "api_token": "vfUgjheJ6QmVg5txMOCUhtaI0EBvpNX5ad903CaHTshJsM1i2VAW0NdrR4NN",
+        "created_at": "2019-10-04 16:21:17",
+        "email": "oswaldo@gmail.com",
+        "id": 93,
+        "name": "nahum",
+        "remember_token": null,
+        "updated_at": "2019-10-04 19:08:09",
+        "username": "nahumsito"
+    },
+    {
+        "api_token": "BRxALED9xMZBrxzzvE7jVWEHzChTW5688EHRu8vFUA9eXFNpQeAMVwvFA0Sc",
+        "created_at": "2019-10-04 16:21:26",
+        "email": "jorge.barajas@softtek.com",
+        "id": 94,
+        "name": "jtbv",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:50:49",
+        "username": "jorgetbv"
+    },
+    {
+        "api_token": "7C522RAH442bzTkPnX4DYwDqkzpivkwJcu4GwmHegJLrK6FYe7vt5ONKwx6K",
+        "created_at": "2019-10-04 16:21:34",
+        "email": "upont@gmail.com",
+        "id": 95,
+        "name": "ulises pont",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:33:41",
+        "username": "ulises"
+    },
+    {
+        "api_token": "vaZ953gnnDq0imJ4RZyJWDkWdBGFhOcSXnuBrVWeQsBycqUOc0MXj8mExHXD",
+        "created_at": "2019-10-04 16:22:01",
+        "email": "araceli@gmail.com",
+        "id": 99,
+        "name": "Araceli Vazquez",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:44:30",
+        "username": "araceli"
+    },
+    {
+        "api_token": "c02pe2i8K1ew6epf7cY9cCfw4XjbliH56uK8ZMsDN8buCpNXrmRFPGaUTIfu",
+        "created_at": "2019-10-04 16:22:14",
+        "email": "alan@gmail.com",
+        "id": 103,
+        "name": "alan",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:22:14",
+        "username": "alan"
+    },
+    {
+        "api_token": "tZJPGRLC10nqaEYd2fqL7BmSzDyjy1EsPOovsuoy1cdfgzWdDIUfHAzGzdy1",
+        "created_at": "2019-10-04 16:22:58",
+        "email": "ian.ramos@mail.com",
+        "id": 104,
+        "name": "IanRamos",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:22:58",
+        "username": "IanRamos"
+    },
+    {
+        "api_token": "vrKiXgvWghEu4sXL8gU5IdUbZ2UxnspJyyuxT3W7udqo0aQoob8VH5upfaaY",
+        "created_at": "2019-10-04 16:23:56",
+        "email": "asdasd@email.com",
+        "id": 109,
+        "name": "AdianQQ",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:35:45",
+        "username": "AdrianPZ"
+    },
+    {
+        "api_token": "cnq2Ievgw2knKxIMSip4qyVle7rjTQEJKqKCJslS9rnq47yX9TI3mFbtAPWQ",
+        "created_at": "2019-10-04 16:23:58",
+        "email": "moises.ortiz@softtek.com",
+        "id": 110,
+        "name": "moises tapia",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:44:06",
+        "username": "moisestapia01"
+    },
+    {
+        "api_token": "7WqFnZpDmso800Gi3j34Sc5FmphFapVnTJ5yuDBOXOD9d0djefbndSEv1Zxr",
+        "created_at": "2019-10-04 16:24:41",
+        "email": "sergio.lopezc@softtek.com",
+        "id": 113,
+        "name": "Sergio Andres Lopez Chable",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:43:21",
+        "username": "sergio.lopezc"
+    },
+    {
+        "api_token": "WzE6ffB6YsHNa5rSxaVKf03kB8S9cmdTxWMsUYRnM3Tqhqk05IDLZUketmdj",
+        "created_at": "2019-10-04 16:25:02",
+        "email": "newemail@softtek.com",
+        "id": 115,
+        "name": "fernando",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:36:32",
+        "username": "fernando1"
+    },
+    {
+        "api_token": "XxhY5d4Da64cdOtyTlKytDqrEgH6QvHcoJHHn5XUGg1xxcFb4zCFPJMfaeFl",
+        "created_at": "2019-10-04 16:25:34",
+        "email": "armando@mailinator.com",
+        "id": 116,
+        "name": "armando",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:25:34",
+        "username": "armandos"
+    },
+    {
+        "api_token": "BDcOLji6KM1SKzEBBH280oTlt6HPaePouLL1aZsldBtOHH0iKE8pIUt0ccF0",
+        "created_at": "2019-10-04 16:26:47",
+        "email": "macaro@gamil.com",
+        "id": 119,
+        "name": "macario",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:26:47",
+        "username": "macario"
+    },
+    {
+        "api_token": "vB62de0Oaco7DxoPLNjFkm5LhAbCWt2Sd0mbrpWBqucsBmfZuTQRXs0Yt3g4",
+        "created_at": "2019-10-04 16:26:48",
+        "email": "pepito1@gmail.com",
+        "id": 120,
+        "name": "pepito1",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:26:48",
+        "username": "pepito1"
+    },
+    {
+        "api_token": "vPvPREDaPd5GXIl8IdabZi3qJG0CutFAYfUdJ0VPPbEnBGKCs55xqwfMhfyh",
+        "created_at": "2019-10-04 16:26:49",
+        "email": "daniel@gmail.com",
+        "id": 121,
+        "name": "Daniel",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:26:49",
+        "username": "daniel"
+    },
+    {
+        "api_token": "RqFcR3gJz88aQUPMoqHcbQEcxTcwCBxVYs137bcHup53vgGQjv3jtRhbeBUn",
+        "created_at": "2019-10-04 16:27:53",
+        "email": "do123.moreno@softtek.com",
+        "id": 125,
+        "name": "do123",
+        "remember_token": null,
+        "updated_at": "2019-10-04 18:18:02",
+        "username": "ldo123"
+    },
+    {
+        "api_token": "MyK88bDYGQNxChPPkk1yaxcGbVBk1tfiWWHr5hnjgbYZlxeUOD559xWl5F7G",
+        "created_at": "2019-10-04 16:28:41",
+        "email": "pepito123@gmail.com",
+        "id": 128,
+        "name": "pepito123",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:34:05",
+        "username": "pepito123"
+    },
+    {
+        "api_token": "XBMYoJJQhx22a4swSf7Gh0GKYaqNlebfBmaM1ZXGL0Lw580gnfz8p6d8SCmU",
+        "created_at": "2019-10-04 16:28:51",
+        "email": "jacinta_mm@gamil.com",
+        "id": 129,
+        "name": "Jacinta Leonarda",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:33:33",
+        "username": "Jacinta"
+    },
+    {
+        "api_token": "N3ZvsmvqwsFiFUurzGqSqhszWXFOvO1zAAI5PLbTPz3FQK1RKaWhySE69Jf0",
+        "created_at": "2019-10-04 16:29:48",
+        "email": "spookyc@gmail.com",
+        "id": 132,
+        "name": "yisus",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:29:48",
+        "username": "spookyc"
+    },
+    {
+        "api_token": "WQ4DzUGdRj43FZM8x1vxP9a0v4XI9tfMj0zq85gA266mD7o2pOK4cFHCx13O",
+        "created_at": "2019-10-04 16:31:21",
+        "email": "daniel2@gmail.com",
+        "id": 140,
+        "name": "Daniel2",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:31:21",
+        "username": "daniel2"
+    },
+    {
+        "api_token": "makQnANoEBrxQQga7eEsiZlOTBGljMOtteDRW9Zl5jQFAjrQBqO7tEsVMfZM",
+        "created_at": "2019-10-04 16:31:59",
+        "email": "josea2.luna@softtek.com",
+        "id": 141,
+        "name": "Jose Luna2",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:31:59",
+        "username": "lunab2"
+    },
+    {
+        "api_token": "IOX9LiIy97oFD85O26w4gJUPxW10e5bNfVQn4GWf7ad0sG8WDOfYNbX4QlIP",
+        "created_at": "2019-10-04 16:33:16",
+        "email": "josea3.luna@softtek.com",
+        "id": 144,
+        "name": "Jose",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:33:16",
+        "username": "lunab21"
+    },
+    {
+        "api_token": "Zr7GQY4n5qniGS0UC2E1eBktpwEVXHwhBLgrYe5Y0zq8899XsLGyJGv7uu00",
+        "created_at": "2019-10-04 16:34:14",
+        "email": "Enzo666@gmail.com",
+        "id": 147,
+        "name": "Enzo",
+        "remember_token": null,
+        "updated_at": "2019-10-04 18:42:30",
+        "username": "Enzo666"
+    },
+    {
+        "api_token": "FItADwFAWfjZeZKZGDqszbLRczKyI7puxJLMq2ROCwYxpwkHccqgI4OZ4oPI",
+        "created_at": "2019-10-04 16:39:12",
+        "email": "rodrigo_yrodriguez@hotmail.com",
+        "id": 154,
+        "name": "Rodrigo Yanez Rodriguez",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:40:23",
+        "username": "adminryor"
+    },
+    {
+        "api_token": "osmST3qUHE8VfDuYnVLgLaZmbsYms6h3y6JNZDAXETS1frIzOfI1ZIth9rnz",
+        "created_at": "2019-10-04 16:39:51",
+        "email": "lalo_eoos11@hotmail.com",
+        "id": 156,
+        "name": "lalo",
+        "remember_token": null,
+        "updated_at": "2019-10-07 21:49:12",
+        "username": "eduardoosnaya"
+    },
+    {
+        "api_token": "jNGO8lihs3dQ9HSeoyhtixLxNULA0w60SgFUR43cJ9kUrkWee5O4ACHiFJKX",
+        "created_at": "2019-10-04 16:40:22",
+        "email": "holapo",
+        "id": 157,
+        "name": "holapp",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:40:22",
+        "username": "hola"
+    },
+    {
+        "api_token": "qK9KQRiofy5kwT6AW7LqxQoUiwQ3nUDkGr4JghEpnSh3crcJ33zEV7zXqUH9",
+        "created_at": "2019-10-04 16:41:01",
+        "email": "ian.ramos1@mail.com",
+        "id": 158,
+        "name": "IanRamos1",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:41:01",
+        "username": "IanRamos1"
+    },
+    {
+        "api_token": "dBFGTJUzgMnzg1uIXAmq0TpwrMJRKvcObUdH3Ud79aviQp4noDyQ0RQd4jHT",
+        "created_at": "2019-10-04 16:44:28",
+        "email": "spookyc@html.com",
+        "id": 162,
+        "name": "spooky",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:44:28",
+        "username": "spooky.c"
+    },
+    {
+        "api_token": "tRxJqCXeFVsMj59VTCupYbV39ZKAwcvZbPLeaThL8GF4eI07RBhzwSuJj3zF",
+        "created_at": "2019-10-04 16:44:45",
+        "email": "holapo1",
+        "id": 163,
+        "name": "holapp1",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:44:45",
+        "username": "hola1"
+    },
+    {
+        "api_token": "wAT4L1yVAkrHUualMIwcVNrj4J0loUcWavkpRkFSE1Tu748rR4WXvq6ho75E",
+        "created_at": "2019-10-04 16:49:12",
+        "email": "spoopyc@gmaill.com",
+        "id": 170,
+        "name": "Spoopy",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:32:24",
+        "username": "ghost01"
+    },
+    {
+        "api_token": "4NvCp3OPixnqUUGLaD1wz2Xj5ArxgoV89QPoNstY9YolrdphluKGvqz8VirI",
+        "created_at": "2019-10-04 16:49:23",
+        "email": "ian.ramosUpdated@mail.com",
+        "id": 171,
+        "name": "IanRamosUpdated",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:32:55",
+        "username": "IanRamosUpdated"
+    },
+    {
+        "api_token": "QC1K5Scpp7VfGXsGDnD206B2dOKZgmsbktSN2mI482uR7fSwvULZPpH54Pzy",
+        "created_at": "2019-10-04 16:51:45",
+        "email": "ricardo@gmail.com",
+        "id": 173,
+        "name": "ricardo",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:51:45",
+        "username": "ricardo"
+    },
+    {
+        "api_token": "eQ7FNCv9Eqth923NIgFquGqWxxgFy6jWXRY5u4wA7mKjGwJlyhztPVDFas6u",
+        "created_at": "2019-10-04 16:54:10",
+        "email": "r@gmail.com",
+        "id": 176,
+        "name": "r",
+        "remember_token": null,
+        "updated_at": "2019-10-04 16:54:10",
+        "username": "r"
+    },
+    {
+        "api_token": "cTTpPaN9vJCH2djQmMpct4GZPVi1sYIejRNiuuzW53vnj0cgRc40UEy1U0W9",
+        "created_at": "2019-10-04 17:08:47",
+        "email": "alanr@gmail.com",
+        "id": 178,
+        "name": "alanr",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:08:47",
+        "username": "alanr"
+    },
+    {
+        "api_token": "mXZx19meVGtHmOvsCn9V6XlFFRQVP6eYvWj2rxhBNXFh9CecOwPMi10BFO7b",
+        "created_at": "2019-10-04 17:10:05",
+        "email": "alanricardo@gmail.com",
+        "id": 180,
+        "name": "alanricardomartinez",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:32:51",
+        "username": "alanricardo"
+    },
+    {
+        "api_token": "IqjlpjrfCc9YwlFLDwMNL17tQafB1Xcd2g8QpFEjzbtkNwoPGDiKoqFtYaQW",
+        "created_at": "2019-10-04 17:14:24",
+        "email": "danielrivas@gmail.com",
+        "id": 181,
+        "name": "Daniel Rivas",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:33:22",
+        "username": "daniel rivas"
+    },
+    {
+        "api_token": "mIisjs1P1yjqKlz7svbxPPMW8TtSFplVwh5Aujhhs0Qs7ZemNWIhv3R1k1WF",
+        "created_at": "2019-10-04 17:14:37",
+        "email": "nuevoemail@nuevoemail.com",
+        "id": 182,
+        "name": "armandon",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:38:01",
+        "username": "armandos1"
+    },
+    {
+        "api_token": "ivInshrcF4klgtDNNNIHBsOBg7CFed2aEt2EfvOcRyFu5HxY1LLM2An57qVH",
+        "created_at": "2019-10-04 17:22:10",
+        "email": "juanito@gmail.com",
+        "id": 186,
+        "name": "juanito",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:22:10",
+        "username": "juan"
+    },
+    {
+        "api_token": "lbT46hqnrIjRvsq7OFnYTknpJPAiJjfTyPIsfRtYgirV0ivLhXdprCw6dNn4",
+        "created_at": "2019-10-04 17:36:31",
+        "email": "holapo7",
+        "id": 189,
+        "name": "holapp1",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:36:31",
+        "username": "hola3"
+    },
+    {
+        "api_token": "sP3kWi1G2OsPTyGtIw6VXL7GcwjIQEj1C7xnzUXJKTTACpjEQPmkvNGMCFJS",
+        "created_at": "2019-10-04 17:39:38",
+        "email": "holapo5",
+        "id": 191,
+        "name": "holapp1",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:39:38",
+        "username": "hola12"
+    },
+    {
+        "api_token": "Rr4gqNspFcYMbj3s5XpopRlVBD25QAl30ti0un5TtJk1zA8Rvp16qYhQzlfC",
+        "created_at": "2019-10-04 17:44:28",
+        "email": "jluna24@lala.com",
+        "id": 197,
+        "name": "holapp1",
+        "remember_token": null,
+        "updated_at": "2019-10-04 18:08:31",
+        "username": "jluna"
+    },
+    {
+        "api_token": "U4vAV1sGNa7hCddFn9kdATkn8UMGMksWcst2F76iANp1G4xfFQH7lhfJHC6s",
+        "created_at": "2019-10-04 17:50:48",
+        "email": "jorge@email.com",
+        "id": 199,
+        "name": "Jorge",
+        "remember_token": null,
+        "updated_at": "2019-10-04 17:50:48",
+        "username": "jorge"
+    },
+    {
+        "api_token": "JvluEsIG28YLS2zdHqwuflUpv0gNRPYXtyQt4PfYsLpNM12GFBvZtbmMCOwu",
+        "created_at": "2019-10-04 18:08:18",
+        "email": "holapo45",
+        "id": 207,
+        "name": "holapp1",
+        "remember_token": null,
+        "updated_at": "2019-10-04 18:08:18",
+        "username": "hola13"
+    },
+    {
+        "api_token": "PP7mcwhWhubXMTVIxtwprTUqqvMhOy06dvKQICiDyDa5AGcg8s2gwm2ua1W3",
+        "created_at": "2019-10-04 18:28:03",
+        "email": "holapo459",
+        "id": 213,
+        "name": "holapp14",
+        "remember_token": null,
+        "updated_at": "2019-10-04 18:28:03",
+        "username": "hola183"
+    },
+    {
+        "api_token": "gJcYDKKKJT2wcDCA6SdP5lBMQ49imiA12FwkLgqij8g2OxWMdwb0ewwzA9Jq",
+        "created_at": "2019-10-04 18:42:30",
+        "email": "Enzo@gmail.com",
+        "id": 217,
+        "name": "EnzoFerrari",
+        "remember_token": null,
+        "updated_at": "2019-10-04 18:42:30",
+        "username": "Enzo"
+    },
+    {
+        "api_token": "vVjTgYTztIpcZPqb76K9KBWxLlLYZ7vHRveywPtJeLtqKsoehxVbOasv2KxU",
+        "created_at": "2019-10-07 19:20:04",
+        "email": "lalo_eoos@hotmail.com",
+        "id": 219,
+        "name": "Eduardo",
+        "remember_token": null,
+        "updated_at": "2019-10-07 19:20:04",
+        "username": "laloosnayaa"
+    },
+    {
+        "api_token": "3IehsMJ16UYKfKwXvHWjY83xWe5ns9MOWIWZdMVlnNdS7M8HEf6gOB0ZNaMH",
+        "created_at": "2019-10-07 21:47:18",
+        "email": "eoos@hoymail.com",
+        "id": 220,
+        "name": "eduardolalo",
+        "remember_token": null,
+        "updated_at": "2019-10-07 22:08:58",
+        "username": "lalooo"
+    },
+    {
+        "api_token": "3EK1LGjKnPLUaSprHRLtrMBaO9XfUDaGPt5yd8uJe8sLiKGH3Lfr7nd8vmqB",
+        "created_at": "2019-11-11 19:32:41",
+        "email": "jonathan123@gmail.com",
+        "id": 223,
+        "name": "Jonathan Cerda Pezina",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:29:24",
+        "username": "jonathan1234"
+    },
+    {
+        "api_token": "T7nSmuQOxqpbeBIys0LH7fRGv78u16VV25RlBRBu3ZRiW8ccFfbamUwEtMYI",
+        "created_at": "2019-11-12 22:03:59",
+        "email": "irving@gmail.com",
+        "id": 225,
+        "name": "Ivring Hernandez",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:03:59",
+        "username": "irving33"
+    },
+    {
+        "api_token": "DYjrxqk4jYhknTa5irPV5E2M3CxIDJoQf3fmWI2NELkbxhiEKkgORJWYCLYW",
+        "created_at": "2019-11-12 22:04:06",
+        "email": "alan.anaya@softtek",
+        "id": 226,
+        "name": "Alan Anaya",
+        "remember_token": null,
+        "updated_at": "2019-11-12 23:04:26",
+        "username": "AlanAnaya123"
+    },
+    {
+        "api_token": "Fuh7Cl0sSFOwEt4IEBLXM2bopTQTy5z17f9c7XxpTGTulxCuUKEHcTTFQoSx",
+        "created_at": "2019-11-12 22:04:10",
+        "email": "adan.vazquez@softtek.com",
+        "id": 227,
+        "name": "Adan Vazquez",
+        "remember_token": null,
+        "updated_at": "2019-11-12 23:05:40",
+        "username": "adan-vazquez"
+    },
+    {
+        "api_token": "DnOp98HE0j48nn9UdARGVMkeW4XnkSsFqa1WjwZjjy8kg1tbyavocnhaMpJF",
+        "created_at": "2019-11-12 22:04:13",
+        "email": "rodrigo.marroquin@softtek.com",
+        "id": 228,
+        "name": "Rodrigo Marroquin",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:04:13",
+        "username": "ramr4"
+    },
+    {
+        "api_token": "ALBb6YcJds9YiGiT7E6N3N7Tjy2i7qcbLOtnTLr6c55talcHhPas7EWIiMNR",
+        "created_at": "2019-11-12 22:04:21",
+        "email": "",
+        "id": 229,
+        "name": "javier",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:04:21",
+        "username": "irving33"
+    },
+    {
+        "api_token": "9f6rYkd6ZCbB4iWftBYudyISUer2MJJ4GXwuc7N7noNkCRrqT7en5yqm0GTF",
+        "created_at": "2019-11-12 22:04:34",
+        "email": "vanessa.ramirez@softtek.com",
+        "id": 231,
+        "name": "Vanessa Ramirez",
+        "remember_token": null,
+        "updated_at": "2019-11-12 23:06:09",
+        "username": "vane299"
+    },
+    {
+        "api_token": "Wu2tA1Ak3JWBukT5v39gRZ3usNN3GPGYbkudZ0ARViUwhT9RsuXSAysG9wqr",
+        "created_at": "2019-11-12 22:04:45",
+        "email": "franciscojavier@gmail.com",
+        "id": 232,
+        "name": "Francisco Javier Gonzalez",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:36:39",
+        "username": "franciscojaviergonzalez"
+    },
+    {
+        "api_token": "qjo0264HDH35RtTeiuYJWYyVfch1OspwlHJZL778FTaFT9MLIKtS5lh75pY4",
+        "created_at": "2019-11-12 22:04:59",
+        "email": "jonathanD@gmail.com",
+        "id": 233,
+        "name": "Jonathan Cerda Pezina",
+        "remember_token": null,
+        "updated_at": "2019-11-13 05:49:36",
+        "username": "jonathanDaniel"
+    },
+    {
+        "api_token": "32zVIhx1238L3X5hGkMY3wIVk1tkcZZ9tDOKroXi96f0eLGHb3dAVnxWkHti",
+        "created_at": "2019-11-12 22:05:30",
+        "email": "carlosluevanos@softtek.com",
+        "id": 234,
+        "name": "Carlos Luevanos",
+        "remember_token": null,
+        "updated_at": "2019-11-12 23:04:24",
+        "username": "carlos9865"
+    },
+    {
+        "api_token": "63t1lZBU2spUbVmU1J1RKKhBCov4IDZjjwzdkqsHaWVdae3hXWi1LtgTZ3AK",
+        "created_at": "2019-11-12 22:05:47",
+        "email": "alex.davila@softtek.com",
+        "id": 236,
+        "name": "Alex Davila Garza",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:30:23",
+        "username": "ADAG2"
+    },
+    {
+        "api_token": "0Jj71VLaP7jU903RIyJvO9mHNWm0jxyL3tvZ0TfqBMqIWav5xaMBPuQXatWi",
+        "created_at": "2019-11-12 22:06:07",
+        "email": "cegalvan123@gmail.com",
+        "id": 237,
+        "name": "Cesar Galvan Solis",
+        "remember_token": null,
+        "updated_at": "2019-11-12 23:05:15",
+        "username": "cegalvan123"
+    },
+    {
+        "api_token": "5eCdKAUicvRBqSO6SnprRayMcA8B3KhBVnfsliwKtRSd2BuzzAGKhQEV7Vqt",
+        "created_at": "2019-11-12 22:06:27",
+        "email": "enriquea.rodriguez",
+        "id": 238,
+        "name": "Enrique Rodriguez",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:31:15",
+        "username": "Requixen"
+    },
+    {
+        "api_token": "Sz1sD8IG8ehVZFU7bH6xctlanWe9IsuMNqyHfE2iISX28c1Ao4qhm52845Rr",
+        "created_at": "2019-11-12 22:06:54",
+        "email": "ybayardo@webtraining.mx",
+        "id": 239,
+        "name": "Yanick Bayardo",
+        "remember_token": null,
+        "updated_at": "2019-11-12 23:58:42",
+        "username": "yannick-bayardo"
+    },
+    {
+        "api_token": "AloFgRMPWd6BPaY52jtMSHED50UTpNftym4QqAUdVkB3IngSssn7FnIbucwE",
+        "created_at": "2019-11-12 22:07:23",
+        "email": "josue.valencia@softtek.com",
+        "id": 241,
+        "name": "Josue Valencia",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:07:23",
+        "username": "samuel1234"
+    },
+    {
+        "api_token": "8SePbUJm1hrS9PM0KFk2JCvReTnsld2eJHDSdz3NI8oQbYJ48hXkQNX94nvP",
+        "created_at": "2019-11-12 22:07:29",
+        "email": "rafael.minjarez@softtek.com",
+        "id": 242,
+        "name": "Rafael Minjarez",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:54:01",
+        "username": "Rafa23"
+    },
+    {
+        "api_token": "92cxlBMrf1XWbUApnF7vKEMFQiBRmUDoJe2WizmEX8ZrHcfKYaELs1OrNYAo",
+        "created_at": "2019-11-12 22:08:28",
+        "email": "mitzy.somadosi1@softtek.com",
+        "id": 243,
+        "name": "Mitzy Somadosi",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:50:49",
+        "username": "mitzysomadosi"
+    },
+    {
+        "api_token": "jWlecsfM3DvkJA3Sb448afyugE5NBZjKv74gzCpAFoLxXmrqUkeKXLSXejrc",
+        "created_at": "2019-11-12 22:08:30",
+        "email": "valeria.garibay@softtek.com",
+        "id": 244,
+        "name": "Valeria Garibay",
+        "remember_token": null,
+        "updated_at": "2019-11-13 00:26:40",
+        "username": "ValeGary1"
+    },
+    {
+        "api_token": "J62sWDg9yB8F3If6qVydLXulsJBKprrd4HK2tAzHf2mDEbPfmqZ0PP8LT7D3",
+        "created_at": "2019-11-12 22:10:29",
+        "email": "jesus.reyes@softtek.com",
+        "id": 247,
+        "name": "Daniel Reyes",
+        "remember_token": null,
+        "updated_at": "2019-11-12 23:14:54",
+        "username": "jdanielr"
+    },
+    {
+        "api_token": "ToiDtaxGztJIYHCD855zgUHBh1GSkkCKdRmauFCkEFmIsAUxjvNDnZC63RiZ",
+        "created_at": "2019-11-12 22:12:55",
+        "email": "alanGuerra@gmail.com",
+        "id": 248,
+        "name": "Alan Emmanuel Nava Guerra",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:43:28",
+        "username": "alan-nava"
+    },
+    {
+        "api_token": "qp7wuHk6UpJo6aOrOcpAtMXcWdW1Wwz94jH42v1XQwmPuk8P8N2Mjbajyh0E",
+        "created_at": "2019-11-12 22:17:49",
+        "email": "garicam.said@gmail.com",
+        "id": 249,
+        "name": "Said Alberto Garcia Morales",
+        "remember_token": null,
+        "updated_at": "2019-11-12 23:26:41",
+        "username": "Said1234"
+    },
+    {
+        "api_token": "Z63xxEu5tVjX4Aidnc5h6Q4c0t668zaV8IaTUOadn6uvyAdnDxVjxo5XQKIJ",
+        "created_at": "2019-11-12 22:24:10",
+        "email": "erick.morales@softtek.com",
+        "id": 250,
+        "name": "Erick Morales",
+        "remember_token": null,
+        "updated_at": "2019-11-13 06:22:45",
+        "username": "eamg1"
+    },
+    {
+        "api_token": "fE2gY5zaAVSBTETj7QfnJ5uYzCT574U0J3yaIiVkEIoZ0MYEuXWbzJJr1Muu",
+        "created_at": "2019-11-12 22:46:51",
+        "email": "josue@test1.com",
+        "id": 276,
+        "name": "Josue Valeia",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:46:51",
+        "username": "Josue1234"
+    },
+    {
+        "api_token": "Mx9albdMLEP2tOeFFWenJHahKbdgu6OlhkWAerZbPTz3mDr2XE840gwGCqxK",
+        "created_at": "2019-11-12 22:50:50",
+        "email": "sam12345e@test1.com",
+        "id": 279,
+        "name": "Sami Reyes",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:50:50",
+        "username": "sam12345"
+    },
+    {
+        "api_token": "gUJqFkQVxzGtj9XUvvIf8Cm4MOWIfEWig8xagWVk8VmwcHk3fz3irpxmR4vv",
+        "created_at": "2019-11-12 22:54:20",
+        "email": "cegalvan@gmail.com",
+        "id": 281,
+        "name": "Cesar Galvan",
+        "remember_token": null,
+        "updated_at": "2019-11-12 22:54:20",
+        "username": "cegalvan"
+    },
+    {
+        "api_token": "ynuCHngjKxgW0YyrtHCfpmromqOHBXcgp1EPuKttBGecQYbQecUF5rODhscm",
+        "created_at": "2019-11-12 22:54:31",
+        "email": "sam135e@test1.com",
+        "id": 284,
+        "name": "Sami Rey",
+        "remember_token": null,
+        "updated_at": "2019-11-12 23:56:16",
+        "username": "sam264"
+    },
+    {
+        "api_token": "1vgQamhprI1LvPd6C1eha4AN34mFGeMHO2IuHApVM8JB8auWsOtsn6gOwXfp",
+        "created_at": "2019-11-13 05:49:35",
+        "email": "jonathan@gmail.com",
+        "id": 308,
+        "name": "Jonathan Cerda",
+        "remember_token": null,
+        "updated_at": "2019-11-13 05:49:35",
+        "username": "jonathan"
+    },
+    {
+        "api_token": "jsqvLRhoN2NyLHUhP6UZvxHllkRWEKgQ1lgOBpdJzWu1kzbSLZthHnNSpqxA",
+        "created_at": "2019-12-26 20:40:28",
+        "email": "the_number_one@gmail.com",
+        "id": 317,
+        "name": "Smitty WerbenJagerManJensen",
+        "remember_token": null,
+        "updated_at": "2019-12-26 20:40:28",
+        "username": "the_number_one"
+    },
+    {
+        "api_token": "31qisOtO7ox9QIxIqT5N2vmnXLSDSgFizkQYdgIM8lv2OMNy2D6r0amgB2DG",
+        "created_at": "2019-12-26 20:40:59",
+        "email": "poncho_997@hotmail.com",
+        "id": 318,
+        "name": "Alfonso",
+        "remember_token": null,
+        "updated_at": "2019-12-26 21:10:47",
+        "username": "byPoncho"
+    },
+    {
+        "api_token": "AfrT480F8fU1jMcoJr4HcrV4rn6eLwIhdSAfZUB0ZVoJWxkpkHvvR9AUrR9n",
+        "created_at": "2019-12-26 20:41:01",
+        "email": "teni@gmail.com",
+        "id": 319,
+        "name": "Esteban Barajas",
+        "remember_token": null,
+        "updated_at": "2019-12-26 20:41:01",
+        "username": "Teni"
+    },
+    {
+        "api_token": "EHyBR8tIRvFHlQ0N8sZnFljhi6zd1qLUZbsofEJ3RwVttZ39gkccHGBWcklM",
+        "created_at": "2019-12-26 20:41:01",
+        "email": "rafael.munozg2@softtek.com",
+        "id": 320,
+        "name": "Rafael Alejandro Muñoz Guzmán",
+        "remember_token": null,
+        "updated_at": "2019-12-26 21:05:52",
+        "username": "rafael.munozg2"
+    },
+    {
+        "api_token": "hmZrT8RjOPe1nbQcyA8tYRRD2UT4HfFK54axW8qmjC3a9OlOCWFeMiDecf9J",
+        "created_at": "2019-12-26 20:41:14",
+        "email": "Argel.esquivel@softtek.com",
+        "id": 322,
+        "name": "Argel Esquivel",
+        "remember_token": null,
+        "updated_at": "2019-12-26 21:23:47",
+        "username": "Argel"
+    },
+    {
+        "api_token": "zbco0GdqGPIpOEkeJoFn8nWFcKRXMhCnoNoWzX51u2Mi7UKRihvx4Dew1A2g",
+        "created_at": "2019-12-26 20:41:22",
+        "email": "jcastrejona@softtek.com",
+        "id": 324,
+        "name": "Jose Castrejon Aguilar",
+        "remember_token": null,
+        "updated_at": "2019-12-26 22:31:51",
+        "username": "jcastrej"
+    },
+    {
+        "api_token": "6NVOsOKMdRbXiWhQP4czsheD9JyUF0j6v1Pw0rIRxu0TnJlR0tDqly5KyUGr",
+        "created_at": "2019-12-26 20:41:23",
+        "email": "AmoAOscar@softtek.com",
+        "id": 325,
+        "name": "Paula Cecilia Moreno",
+        "remember_token": null,
+        "updated_at": "2019-12-26 20:54:10",
+        "username": "Paula"
+    },
+    {
+        "api_token": "zroIVnzIegG0aKBzjsy2RZYm0gXsxXc8XylDqfCXBlX13tdfEXWpnbCy6wJc",
+        "created_at": "2019-12-26 20:41:23",
+        "email": "alfredo.rivas@softtek.com",
+        "id": 326,
+        "name": "Alfredo Rivas",
+        "remember_token": null,
+        "updated_at": "2019-12-26 22:21:32",
+        "username": "alfredo.rivas"
+    },
+    {
+        "api_token": "dvHTkhjSpHxqXJe2NV0cUfEPG67Mg4aVUn11ria5l7bVivsrGjje7bcgOpl2",
+        "created_at": "2019-12-26 20:41:24",
+        "email": "jahzeel.amador@sotttek.com",
+        "id": 327,
+        "name": "Daniel Amador",
+        "remember_token": null,
+        "updated_at": "2019-12-26 21:56:26",
+        "username": "Jahzeelin"
+    },
+    {
+        "api_token": "KOImFe4rY4L36Jryw4s5ypbkEYLk7v7aF6pOm2Vhr5aScfJxv3RFYexbqoLb",
+        "created_at": "2019-12-26 20:42:20",
+        "email": "lorena.baez@softtek.com",
+        "id": 328,
+        "name": "Lorena Baez",
+        "remember_token": null,
+        "updated_at": "2019-12-26 21:18:43",
+        "username": "Lorena-Baez"
+    },
+    {
+        "api_token": "6hRSAfA72TSeXFclyjoPQr42O28BlPDoxMMVpebXCFNHEHbZZdsu6FdhzfTv",
+        "created_at": "2019-12-26 20:42:20",
+        "email": "abigail.panola@gmail.com",
+        "id": 329,
+        "name": "Abigail Panola",
+        "remember_token": null,
+        "updated_at": "2019-12-26 21:19:27",
+        "username": "Abby.Panola"
+    },
+    {
+        "api_token": "CNYpzgzKd4BUx0ArCw8RefkiDOyu9QDLs5zpM76XoDP20xz6OsFBBHe8bMNF",
+        "created_at": "2019-12-26 20:43:27",
+        "email": "cristobal.silva@softtek.com",
+        "id": 332,
+        "name": "Cristobal Diaz",
+        "remember_token": null,
+        "updated_at": "2019-12-26 21:37:26",
+        "username": "Cristobal"
+    },
+    {
+        "api_token": "ZJLE32FxYF0xFZArCXVzmI3ZvvrSSiwQ7cZ4D0siaUwPNY5CObJmTTTEr63w",
+        "created_at": "2019-12-26 20:44:01",
+        "email": "luis@mail.com",
+        "id": 334,
+        "name": "Luis Hinojos",
+        "remember_token": null,
+        "updated_at": "2019-12-26 21:18:21",
+        "username": "luishinojos"
+    },
+    {
+        "api_token": "0Lsntu14lMhjLkNhGWcIYyEOfgu0MkWOnvgGi4zMJ94Ey62fEgFacsPMm5eE",
+        "created_at": "2019-12-26 20:45:35",
+        "email": "mhhlnuevo@gmail.com",
+        "id": 337,
+        "name": "Mario Hernandez",
+        "remember_token": null,
+        "updated_at": "2019-12-26 23:01:40",
+        "username": "mhhlnuevo"
+    },
+    {
+        "api_token": "E2GEjMvP3yfr8Jmk1fzPquT4sTkxeun0LcD2tYLufjZQPY00K1YVs8cDhu2P",
+        "created_at": "2019-12-26 20:46:29",
+        "email": "hgmv@softtek.com",
+        "id": 340,
+        "name": "Gerardo M. fjkkfjsdsjkdfVertiz",
+        "remember_token": null,
+        "updated_at": "2019-12-26 22:17:07",
+        "username": "geravertiz"
+    },
+    {
+        "api_token": "AA9ml2uJ8adQrSIm1fJWHG7gVIlJjn6zNWRxeSXYRbE4CzIcpgpHGC1WS9KF",
+        "created_at": "2019-12-26 20:47:10",
+        "email": "adan.carrera@softtek.com",
+        "id": 342,
+        "name": "Adan prrazo",
+        "remember_token": null,
+        "updated_at": "2019-12-26 21:58:59",
+        "username": "adan.prro"
+    },
+    {
+        "api_token": "dPmFU9dUGkUzKhJmCkSmOq5Xi5pK63c2hCDBY1bdRYA4mGNOxYJgOkt4VOUc",
+        "created_at": "2019-12-26 21:04:29",
+        "email": "pablo.dominguez@softtek.com",
+        "id": 344,
+        "name": "Pablo Antonio Dominguez Cantina",
+        "remember_token": null,
+        "updated_at": "2019-12-27 16:26:52",
+        "username": "pablo-dominguez"
+    },
+    {
+        "api_token": "qpLbL7NKPm0jCAuFgjMpLTJKimT6qjpOzE36dOUKPkP2EJ7Liyg9jtKrXuwL",
+        "created_at": "2019-12-26 21:07:21",
+        "email": "elmeromero@softtek.com",
+        "id": 345,
+        "name": "Oscar Aranda",
+        "remember_token": null,
+        "updated_at": "2019-12-26 21:19:47",
+        "username": "Capnok90"
+    },
+    {
+        "api_token": "7uwI9F1DgS1wSNJE1sjjEcfXupaR1kYZlnx5IcdKIpyQEbkbreZ52fjKDBch",
+        "created_at": "2019-12-26 21:22:17",
+        "email": "paula.moreno@softtek.com",
+        "id": 348,
+        "name": "Paula Cecilia Moreno",
+        "remember_token": null,
+        "updated_at": "2019-12-26 21:35:30",
+        "username": "PaulaMoreno"
+    },
+    {
+        "api_token": "I8yI5go5UET03DzviRZPpuazas1bISKLGTpLsgPSBnLB6jqPKUh8KwC8WP0r",
+        "created_at": "2019-12-26 22:00:20",
+        "email": "hectorg.manzanares@softtek.com",
+        "id": 361,
+        "name": "Gerardo Vertiz",
+        "remember_token": null,
+        "updated_at": "2019-12-26 22:00:20",
+        "username": "gerav"
+    },
+    {
+        "api_token": "aM0VgLpNawQfMt9I5qGMX4Bv6Tznr4RnPe3tV3iCB3BnHoAfnJmvlodL2r9S",
+        "created_at": "2020-07-07 05:10:05",
+        "email": "la_esme@webtraining.mx",
+        "id": 395,
+        "name": "Esmeralda Rodriguez RR.",
+        "remember_token": null,
+        "updated_at": "2020-09-02 01:51:42",
+        "username": "esmeralda-rodriguez"
+    },
+    {
+        "api_token": "KMQTCyyb5Od7r4LkqjJWz18g056YvCMKRMrvOsrQr4ZbUOKAk64vBcgx5MDl",
+        "created_at": "2020-07-07 05:11:12",
+        "email": "esmeralda-rdz@webtraining.mx",
+        "id": 397,
+        "name": "Esmeralda R",
+        "remember_token": null,
+        "updated_at": "2020-07-07 05:11:12",
+        "username": "esmeralda-rodriguez"
+    }
+]
+
+
+1.3-   PUT con JSON body
+
+echo '{"username" : "esmeralda-rodriguez", "email" : "la_esme@webtraining.mx", "password" : "esmeralda", "name" : "Esmeralda Rodríguez H. "}' | http PUT http://projects-api.webtraining.zone/users/395 Content-Type:application/json Api-Token:aM0VgLpNawQfMt9I5qGMX4Bv6Tznr4RnPe3tV3iCB3BnHoAfnJmvlodL2r9S
+
+
+HTTP/1.1 500 Internal Server Error
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Authorization, X-Requested-With, X-Auth-Token, Content-Type
+Access-Control-Allow-Methods: DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, private
+Connection: keep-alive
+Content-Type: text/html; charset=UTF-8
+Date: Thu, 01 Oct 2020 08:42:24 GMT
+Server: nginx/1.10.3 (Ubuntu)
+Transfer-Encoding: chunked
+
+
+
+1.4   put json @esmeralda.json
+
+http PUT http://projects-api.webtraining.zone/users/395 Content-Type:application/json Api-Token:aM0VgLpNawQfMt9I5qGMX4Bv6Tznr4RnPe3tV3iCB3BnHoAfnJmvlodL2r9S @esmeralda.json
+
+
+
+
+
+
+
+
+
+
+
+
+
